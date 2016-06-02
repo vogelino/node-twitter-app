@@ -1,0 +1,20 @@
+{
+  "name": "node-twitter-app",
+  "version": "1.0.0",
+  "description": "Learning to use the twitter REST and Streaming API",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogelino/node-twitter-app.git"
+  },
+  "keywords": [],
+  "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vogelino/node-twitter-app/issues"
+  },
+  "homepage": "https://github.com/vogelino/node-twitter-app#readme"
+}
