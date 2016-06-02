@@ -6,10 +6,11 @@ const my = {};
 my.log = (title, messages, response, color, icon = '') => {
 	let tColor = chalk.inverse[color].bold;
 	let mColor = chalk[color];
-	console.log('\n');
 	console.log(icon ? tColor.white(` ${icon} `) : '', tColor(` ${title} `));
 	messages.forEach((msg) => console.log(mColor(`- ${msg}`)));
-	console.log('\n', mColor(response));
+	if (response) {
+		console.log('\n', mColor(response));
+	}
 	console.log('\n');
 };
 
