@@ -1,30 +1,39 @@
 {
-  "name": "node-twitter-app",
-  "version": "1.0.0",
+  "name": "twitterApiWrapper",
   "description": "Learning to use the twitter REST and Streaming API",
   "main": "src/index.js",
   "scripts": {
+    "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "example:rest": "killall node ; node ./examples/restApi/index.js",
-    "example:stream": "killall node ; node ./examples/streamApi/index.js"
+    "example:stream": "killall node ; node ./examples/streamApi/index.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vogelino/node-twitter-app.git"
+    "url": "https://github.com/vogelino/twitterApiWrapper.git"
   },
   "keywords": [],
   "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vogelino/node-twitter-app/issues"
+    "url": "https://github.com/vogelino/twitterApiWrapper/issues"
   },
-  "homepage": "https://github.com/vogelino/node-twitter-app#readme",
+  "homepage": "https://github.com/vogelino/twitterApiWrapper#readme",
   "devDependencies": {
     "chalk": "^1.1.3",
+    "commitizen": "^2.8.1",
+    "cz-conventional-changelog": "^1.1.6",
     "expect": "^1.20.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "semantic-release": "^4.3.5"
   },
   "dependencies": {
     "twitter": "^1.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
