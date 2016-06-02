@@ -55,7 +55,7 @@ that.makeCallStream = (path, params, onData, onError) => {
 			'Twitter Streaming API success',
 			logMessages,
 			`Tweet collected:
-- Text: ${tweet.text.replace('\n', ' ')}
+- Text: ${tweet.text.replace(/(\r\n|\n|\r)/gm,' \u21B5  ')}
 - Author: ${tweet.user.name} - @${tweet.user.screen_name}`
 		);
 		onData(tweet);
