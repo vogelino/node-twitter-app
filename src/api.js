@@ -1,5 +1,5 @@
 
 module.exports = {
-	restApi: require('./restApi'),
-	streamApi: require('./streamApi')
+	RestApi: require('./RestApi'),
+	StreamApi: require('./StreamApi')
 };

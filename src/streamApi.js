@@ -1,17 +1,16 @@
-const apiUtil = require('./apiUtil');
+const ApiUtil = require('./ApiUtil');
 
-const that = {};
-const my = {};
+const emptyFunc = () => {};
 
-my.onData = () => {};
-my.onError = () => {};
+class StreamApi {
+	constructor(config) {
+		this.apiUtil = new ApiUtil(config);
+	}
+	streamStatusesByKeyword(keyword, oD = emptyFunc, oE = emptyFunc) {
+		const params = { track: keyword };
+		const path = 'statuses/filter';
+		return this.apiUtil.makeCallStream(path, params, oD, oE);
+	};
+}
 
-that.init = apiUtil.init;
-
-that.streamStatusesByKeyword = (keyword, oD = my.onData, oE = my.onError) => {
-	const params = { track: keyword };
-	const path = 'statuses/filter';
-	return apiUtil.makeCallStream(path, params, oD, oE);
-};
-
-module.exports = that;
+module.exports = StreamApi;

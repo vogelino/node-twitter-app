@@ -1,14 +1,14 @@
-const apiUtil = require('./apiUtil');
+const ApiUtil = require('./ApiUtil');
 
-const that = {};
-const my = {};
+class RestApi {
+	constructor(config) {
+		this.apiUtil = new ApiUtil(config);
+	}
+	getUserTimeline(username) {
+		const params = { screen_name: username };
+		const path = 'statuses/user_timeline';
+		return this.apiUtil.makeCallPromise(path, params);
+	}
+}
 
-that.init = apiUtil.init;
-
-that.getUserTimeline = (username) => {
-	const params = { screen_name: username };
-	const path = 'statuses/user_timeline';
-	return apiUtil.makeCallPromise(path, params);
-};
-
-module.exports = that;
+module.exports = RestApi;
