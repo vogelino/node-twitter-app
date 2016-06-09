@@ -2,7 +2,7 @@
   "name": "twitterApiWrapper",
   "description": "Learning to use the twitter REST and Streaming API",
   "main": "src/api.js",
-  "version": "1.0.1-semantically-released",
+  "version": "1.0.2",
   "scripts": {
     "commit": "git-cz",
     "test": "mocha ./test/**/*.spec.js",
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "Lucas Vogel <contact@vogelino.com> (http://vogelino.com/)",
-  "license": "ISC",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/vogelino/twitterApiWrapper/issues"
   },
