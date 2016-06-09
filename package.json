@@ -2,6 +2,7 @@
   "name": "twitterApiWrapper",
   "description": "Learning to use the twitter REST and Streaming API",
   "main": "src/api.js",
+  "version": "1.0.1-semantically-released",
   "scripts": {
     "commit": "git-cz",
     "test": "mocha ./test/**/*.spec.js",
