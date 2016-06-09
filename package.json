@@ -2,7 +2,7 @@
   "name": "twitterApiWrapper",
   "description": "Learning to use the twitter REST and Streaming API",
   "main": "src/api.js",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "engines" : {
     "node" : ">=6.2.0",
     "npm": ">=3.8.9"
