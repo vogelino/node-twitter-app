@@ -3,6 +3,10 @@
   "description": "Learning to use the twitter REST and Streaming API",
   "main": "src/api.js",
   "version": "1.0.2",
+  "engines" : {
+    "node" : ">=6.2.0",
+    "npm": ">=3.8.9"
+  },
   "scripts": {
     "commit": "git-cz",
     "test": "mocha ./test/**/*.spec.js",
