@@ -7,7 +7,7 @@ class StreamApi {
 		this.apiUtil = new ApiUtil(config);
 	}
 	streamStatusesByKeyword(keyword, oD = emptyFunc, oE = emptyFunc) {
-		const params = { track: keyword };
+		const params = { language: 'de', replies: false };
 		const path = 'statuses/filter';
 		return this.apiUtil.makeCallStream(path, params, oD, oE);
 	};
